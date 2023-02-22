@@ -1,0 +1,75 @@
+header{
+background-color: black;
+height: 10em !important;
+}
+
+body{
+    background-color: darkgray;
+    margin: 0px;
+    font-family: system-ui;
+}
+
+.BarraSuperior {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenprueba {
+    height: 30em;
+    background-size: cover;
+    background-image: url(ImagenPrimera.jpg);
+    filter: brightness(0.6);
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    font-size: 22px;
+    width: 28%;
+    justify-content: space-between;
+}
+
+nav > a:hover {
+    color: darkgoldenrod;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	animation: float 6s ease-in-out infinite;
+}
+
+.fondo_principal{
+    background-image: url(ImagenPrimera.jpg);
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}

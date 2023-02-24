@@ -9,6 +9,10 @@ body{
     font-family: system-ui;
 }
 
+.logo-top{
+    width: 65%;
+}
+
 .BarraSuperior {
         margin-left: 15px;
         margin-right: 15px;
@@ -18,17 +22,67 @@ body{
         align-items: center;
 }
 
+.separador{
+    height: 25px;
+    background-color: black;
+}
+
+.banner-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+}
+
+.banner-principal > h1 {
+    margin: 0;
+    font-size: 135px;
+}
+
+.banner-principal > h5 {
+    margin: 90px 0 15px 0;
+    font-size: 25px;
+}
+
+.banner-principal > h3 {
+    margin: 0 0 -40px 0;
+    font-size: 50px;
+}
+
 .jumbotron{
+    height: 550px;
     display: flex;
     justify-content: space-between;
 }
 
+form {
+    height: 40px;
+    display: flex;
+}
+
+form > input {
+    border: 0;
+}
+
+input.submit-button {
+    width: 20%;
+    border-radius: 0 5px 5px 0;
+}
+
+input.email-input {
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+}
+
+.jumbotron > div {
+    width: 50%;
+}
+
 .imagenprueba {
-    height: 30em;
     background-size: cover;
     background-image: url(ImagenPrimera.jpg);
     filter: brightness(0.6);
-    width: 50%;
+    height: 550px;
 }
 
 nav {
@@ -47,31 +101,8 @@ a{
     text-decoration: none;
 }
 
-
-.avatar {
-	width: 150px;
-	height: 150px;
-	animation: float 6s ease-in-out infinite;
-}
-
 .fondo_principal{
     background-image: url(ImagenPrimera.jpg);
-}
-
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
 }
 
 .principal {
@@ -80,7 +111,7 @@ a{
 
 .pruduct-cart {
     height: 20px;
-    background-color: #1000ff;
+    box-shadow: 10px 5px 20px black;
 }
 
 .product-container {
@@ -98,6 +129,25 @@ a{
     flex-direction: column;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    height: 350px;
+    background-color: black;
+    color: white;
+}
+
+.separador-footer{
+    height: 30px;
+    background-color: yellow;
+}
+
+.logo-inferior{
+    width: 290px;
+}
+
 .product-image {
     background-image: url(ImagenPrimera.jpg);
     height: 200px;
@@ -107,5 +157,31 @@ a{
 
 .product-description {
     height: 175px;
-    background-color: #33ff00;
+    padding: 0px 25px;
+}
+
+.encabezado-productos {
+    text-align: center;
+}
+
+.jumbotron-responsive{
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    nav{
+        display:none;
+    }
+
+    .jumbotron-responsive{
+        display: block;
+    }
+
+    .jumbotron{
+        display: none;
+    }
+
+    .jumbotron-responsive{
+        background-image: url(ImagenPrimera.jpg);
+    }
 }

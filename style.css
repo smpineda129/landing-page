@@ -73,3 +73,39 @@ a{
 		transform: translatey(0px);
 	}
 }
+
+.principal {
+    background-color: green;
+}
+
+.pruduct-cart {
+    height: 20px;
+    background-color: #1000ff;
+}
+
+.product-container {
+    padding: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-container > div {
+    height: 375px;
+    width: 30%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    background-image: url(ImagenPrimera.jpg);
+    height: 200px;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.product-description {
+    height: 175px;
+    background-color: #33ff00;
+}

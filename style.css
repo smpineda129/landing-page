@@ -196,24 +196,82 @@ input.submit-button:hover {
     cursor: pointer;
 }
 
-.jumbotron-responsive{
-    display: none;
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons > img {
+    width: 50px;
 }
 
 @media only screen and (max-width: 576px) {
+
+    .jumbotron > div {
+        width: 100%;
+    }
+    
+    .banner-principal > h1 {
+        font-size: 100px;
+    }
+    
+    .banner-principal > h5 {
+        margin: 70px 0 15px 0;
+        font-size: 21px;
+    }
+    
+    .banner-principal > h3 {
+        font-size: 30px;
+    }
+    
+    .product-container {
+        padding: 2em;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .product-container > div {
+        margin-bottom: 3em;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .call-to-action-title {
+        font-size: 2em;
+    }
+    
+    .call-to-action {
+        height: 20em;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer > div {
+        margin-bottom: 2em;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
     nav{
         display:none;
     }
 
-    .jumbotron-responsive{
-        display: block;
-    }
-
-    .jumbotron{
-        display: none;
-    }
-
-    .jumbotron-responsive{
-        background-image: url(sources/ImagenPrimera.jpg);
-    }
 }

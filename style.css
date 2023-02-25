@@ -190,6 +190,7 @@ a{
 
 .encabezado-productos {
     text-align: center;
+    margin-top: 3em;
 }
 
 input.submit-button:hover {
@@ -213,10 +214,25 @@ input.submit-button:hover {
     width: 50px;
 }
 
+.email {
+    width: 100%;
+}
+
+.email {
+    border: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.send {
+    border: 0;
+    border-radius: 0px 10px 10px 0px;
+}
+
 @media only screen and (max-width: 576px) {
 
     .jumbotron > div {
-        width: 100%;
+        padding: 45px 20px;
+        width: auto;
     }
     
     .banner-principal > h1 {
@@ -245,6 +261,10 @@ input.submit-button:hover {
         flex-direction: column;
     }
 
+    .encabezado-productos {
+        margin-top: 2em;
+    }
+
     .call-to-action-title {
         font-size: 2em;
     }
@@ -265,6 +285,10 @@ input.submit-button:hover {
 
     .footer-menu {
         display: none;
+    }
+
+    .social-container {
+        margin-bottom: 15px;
     }
 }
 

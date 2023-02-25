@@ -32,6 +32,8 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 45px;
+    width: 47%;
+    background-color: #a9a9a97a;
 }
 
 .banner-principal > h1 {
@@ -50,9 +52,11 @@ body{
 }
 
 .jumbotron{
-    height: 550px;
     display: flex;
-    justify-content: space-between;
+    background-image: url(sources/ImagenPrimera.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
 }
 
 form {

@@ -11,22 +11,25 @@
     <header>
         <div class="BarraSuperior" class="Avatar">
             <div>
-                <img src="sources/default-monochrome-white.svg" alt="" class="logo-top"/>
+                <img src="sources/logo.svg" alt="" class="logo-top"/>
             </div>
             <nav>
                 <a href="">INICIO</a>
                 <a href="">CONTACTENOS</a>
                 <a href="">TIENDA</a>
             </nav>
+            <div class="menu-logo-container">
+                <img src="sources/menu.png" alt="" class="menu-logo"/>
+            </div>
         </div>
     </header>
     <section class="jumbotron">
         <div class="banner-principal">
-            <h3>Todos somos</h3>
+            <h3>Conectar el mundo es nuestro objetivo</h3>
             <h1>Dev<a style="color:blue">Sa</a></h1>
             <h5>Si requieres asesoria no dudes en dejarnos tu email!</h5>
             <form>
-                <input type="email" class="email">
+                <input type="email" class="email" placeholder="Ingresa tu email">
                 <input type="submit" class="send">
             </form>   
         </div>
@@ -35,40 +38,45 @@
     </section>
     <section>
         <div>
-            <h1 class="encabezado-productos">PRODUCTOS DESTACADOS</h1>
+            <h1 class="encabezado-productos">CATEGORIAS DESTACADAS</h1>
             <hr style="margin-top: -15px; width: 125px;">
+            <p style="text-align: center;">Estos son algunos de nuestros productos o servicios más relevantes:</p>
         </div>
+        <div class="product-carousel-container">
+        <img src="sources/left-arrow.png" alt="" class="arrow-products">
         <div class="product-container">
-            <div class="pruduct-cart">
-                <div class="product-image"></div>
+            <div id="product-1" class="pruduct-cart">
+                <div class="product-image product-1"></div>
                 <div class="product-description">
-                    <h2>Producto 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident omnis quo possimus, beatae quod voluptas facere temporibus aut, fugiat labore exercitationem perferendis eos culpa nihil! Necessitatibus ullam harum similique.</p>
+                    <h2>COMPONENTES</h2>
+                    <p>Los componentes tecnológicos son piezas de hardware o software que forman parte de un sistema informático. Algunos ejemplos incluyen procesadores, tarjetas gráficas, discos duros, memoria RAM, sistemas operativos, programas de aplicación y dispositivos de entrada/salida.</p>
                 </div>
             </div>
-            <div class="pruduct-cart">
-                <div class="product-image"></div>
+            <div id="product-2" class="pruduct-cart">
+                <div class="product-image product-2"></div>
                 <div class="product-description">
-                    <h2>Producto 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident omnis quo possimus, beatae quod voluptas facere temporibus aut, fugiat labore exercitationem perferendis eos culpa nihil! Necessitatibus ullam harum similique.</p>
+                    <h2>REALIDAD VIRTUAL</h2>
+                    <p>Los productos de realidad virtual son dispositivos y software que permiten a los usuarios sumergirse en entornos virtuales y experimentar sensaciones inmersivas. Algunos ejemplos incluyen gafas de realidad virtual, guantes hápticos y plataformas de simulación.</p>
                 </div>
             </div>
-            <div class="pruduct-cart">
-                <div class="product-image"></div>
+            <div id="product-3" class="pruduct-cart">
+                <div class="product-image product-3"></div>
                 <div class="product-description">
-                    <h2>Producto 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident omnis quo possimus, beatae quod voluptas facere temporibus aut, fugiat labore exercitationem perferendis eos culpa nihil! Necessitatibus ullam harum similique.</p>
+                    <h2>REDES</h2>
+                    <p>Los productos de redes son dispositivos y software que permiten a los usuarios conectarse y comunicarse a través de redes informáticas. Algunos ejemplos incluyen routers, switches, hubs, tarjetas de red, software de gestión de redes y protocolos de comunicación.</p>
                 </div>
             </div>
+        </div>
+        <img src="sources/right-arrow.png" alt="" class="arrow-products">
         </div>
     </section>
     <section class="call-to-action">
         <div>
-            <h1 class="call-to-action-title">¿Quieres conocer mas acerca de nosotros?</h1>
+            <h1 class="call-to-action-title">Convierte tus sueños tecnológicos en realidad</h1>
         </div>
     </section>
     <footer>
-        <div class="separador-footer"></div>
+        <div class="separador"></div>
         <div class="footer">
         <div class="footer-menu">
             <h3>
@@ -93,7 +101,7 @@
             </div>
         </div>
         <div>
-            <img src="sources/default-monochrome-white.svg" class="logo-inferior">
+            <img src="sources/logo.svg" class="logo-inferior">
         </div>
         </div>
     </footer>

@@ -4,9 +4,10 @@ height: 10em !important;
 }
 
 body{
-    background-color: darkgray;
+    background-color: black;
     margin: 0px;
     font-family: system-ui;
+    color: white;
 }
 
 .logo-top{
@@ -24,7 +25,7 @@ body{
 
 .separador{
     height: 25px;
-    background-color: black;
+    background-color: yellow;
 }
 
 .banner-principal {
@@ -33,7 +34,8 @@ body{
     justify-content: center;
     padding: 45px;
     width: 47%;
-    background-color: #a9a9a97a;
+    background-color: #0000007a;
+    color: white;
 }
 
 .banner-principal > h1 {
@@ -48,12 +50,16 @@ body{
 
 .banner-principal > h3 {
     margin: 0 0 -40px 0;
-    font-size: 50px;
+    font-size: 35px;
+}
+
+.product-description > p {
+    text-align: justify;
 }
 
 .jumbotron{
     display: flex;
-    background-image: url(sources/ImagenPrimera.jpg);
+    background-image: url(sources/main-section-background.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -85,13 +91,6 @@ input.email-input {
     width: 50%;
 }
 
-.imagenprueba {
-    background-size: cover;
-    background-image: url(sources/ImagenPrimera.jpg);
-    filter: brightness(0.6);
-    height: 550px;
-}
-
 .imagenprueba:hover {
     filter: brightness(0.5);
 }
@@ -104,7 +103,7 @@ nav {
 }
 
 nav > a:hover {
-    color: darkgoldenrod;
+    color: yellow;
 }
 
 a{
@@ -112,17 +111,9 @@ a{
     text-decoration: none;
 }
 
-.fondo_principal{
-    background-image: url(sources/ImagenPrimera.jpg);
-}
-
-.principal {
-    background-color: green;
-}
-
 .pruduct-cart {
     height: auto;
-    box-shadow: 10px 5px 20px black;
+    box-shadow: 0px 0px 20px white;
 }
 
 .product-container {
@@ -133,7 +124,7 @@ a{
 }
 
 .call-to-action{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(sources/kevin-bhagat-zNRITe8NPqY-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(sources/call-to-action-background.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -166,24 +157,34 @@ a{
     color: white;
 }
 
-.separador-footer{
-    height: 30px;
-    background-color: yellow;
-}
-
 .logo-inferior{
     width: 290px;
 }
 
 .product-image {
-    background-image: url(sources/ImagenPrimera.jpg);
     height: 200px;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
+.pruduct-cart > .product-1 {
+    background-image: url(sources/componentes.jpg)
+}
+
+.pruduct-cart > .product-2 {
+    background-image: url(sources/realidad-virtual.jpg)
+}
+
+.pruduct-cart > .product-3 {
+    background-image: url(sources/redes.jpg)
+}
+
+.menu-logo-container{
+    display: none;
+}
+
 .product-description {
-    background-color: gray;
+    background-color: #ffffff1f;
     border-radius: 0 0 25px 25px;
     padding: 0px 25px;
 }
@@ -212,23 +213,59 @@ input.submit-button:hover {
 
 .social-icons > img {
     width: 50px;
+    cursor: pointer;
 }
 
 .email {
-    width: 100%;
-}
-
-.email {
+    font-size: 15px;
     border: 0;
     border-radius: 10px 0px 0px 10px;
+    width: 80%;
+    padding-left: 10px;
 }
 
 .send {
+    background-color: blue;
     border: 0;
     border-radius: 0px 10px 10px 0px;
+    color: #e7e7e7;
+    font-weight: bold;
+    width: 15%;
+    cursor: pointer;
+}
+
+.product-carousel-container{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-products{
+    height: 50px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 576px) {
+
+    #product-3{
+        display: none;
+    }
+
+    #product-2{
+        display: none;
+    }
+
+    .arrow-products{
+        display: none;
+    }
+
+    .menu-logo-container{
+        display: block;
+    }
+
+    img.menu-logo {
+        width: 40px;
+    }
 
     .jumbotron > div {
         padding: 45px 20px;
@@ -246,6 +283,7 @@ input.submit-button:hover {
     
     .banner-principal > h3 {
         font-size: 30px;
+        margin: 0 0 -30px 0;
     }
     
     .product-container {
@@ -296,6 +334,16 @@ input.submit-button:hover {
 
     nav{
         display:none;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .social-container{
+        padding: 0px 100px;
+        border-right: solid yellow;
+        border-left: solid yellow;
     }
 
 }
